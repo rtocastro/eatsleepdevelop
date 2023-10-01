@@ -1,0 +1,121 @@
+:root {
+
+
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+nav {
+    display: flex;
+    background-color: #d3ceca;
+    justify-content: right;
+}
+
+nav a {
+    color: #030b13;
+    padding: 12px 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:inherit;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #b9c6ae;
+    display: flex inline;
+    position: static;
+
+}
+
+.bio {
+
+    position: absolute;
+    margin: auto;
+} 
+
+.img-jpg {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 20px;
+    display: flex;
+
+}
+
+.Buttons {
+    display: inlineblock;
+    padding: 25px 25px 25px 25px;
+    margin: 25px 25px 25px 25px;
+    border: 25px 25px 25px 25px;
+    max-width: 50%; 
+    height: auto;
+    border-color: #010300;
+    border-style: double;
+    justify-content: center
+    ;
+}
+
+.bio {
+    display: inline-block;
+    align-items: center;
+
+}
+
+.the-fruitbat {
+
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    display: inline block;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+   
+
+    main,
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        order: 0;
+
+    }
+
+    header {
+        background-image: "https://i1.sndcdn.com/visuals-000483035862-wXkqo2-t1240x260.jpg";
+
+    }
+
+    
+    nav,
+    footer {
+        background-color: powderblue;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+}
