@@ -1,8 +1,3 @@
-:root {
-
-
-}
-
 header {
     padding: 40px;
     text-align: center;
@@ -10,10 +5,12 @@ header {
     color: #fff;
 }
 
+/* wanted to make it stay kinda centered when being shrunk*/
 main {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    display: inline block;
+    flex-wrap: wrap;
 }
 
 
@@ -23,13 +20,14 @@ nav {
     justify-content: right;
 }
 
+/* added font family to make it slightly different*/
 nav a {
     color: #030b13;
     padding: 12px 18px;
     text-decoration: none;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style:inherit;
+    font-style: inherit;
 }
 
 aside {
@@ -41,12 +39,14 @@ aside {
 
 }
 
+/*wanted the text to stay in one position and keep up with the flex*/
 .bio {
 
     position: absolute;
     margin: auto;
-} 
+}
 
+/* put this for the image on my page to show me*/
 .img-jpg {
     flex: 1;
     background-color: #b9c6ae;
@@ -55,43 +55,41 @@ aside {
 
 }
 
+/* made buttons in photoshop to satisfy the sizes for acceptance criteria */
 .Buttons {
     display: inlineblock;
     padding: 25px 25px 25px 25px;
     margin: 25px 25px 25px 25px;
     border: 25px 25px 25px 25px;
-    max-width: 50%; 
+    max-width: 50%;
     height: auto;
     border-color: #010300;
     border-style: double;
-    justify-content: center
-    ;
+    justify-content: center;
 }
 
+/* centered items in bio to make look more nice */
 .bio {
     display: inline-block;
     align-items: center;
 
 }
 
-.the-fruitbat {
 
-}
-
-
+/* just trying to give the headers a different look */
 h1,
 h2,
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-main {
-    display: inline block;
-    flex-wrap: wrap;
+/*making the footer match with the header/nav*/
+footer {
+    background-color: #b9c6ae;
 }
 
 @media screen and (max-width: 768px) {
-   
+
 
     main,
     nav {
@@ -109,13 +107,11 @@ main {
 
     }
 
-    
+
     nav,
     footer {
         background-color: powderblue;
         justify-content: center;
-        align-items: center;
-        align-content: center;
 
     }
 }
